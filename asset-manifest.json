@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/React-Boilerplate-Template/static/css/main.9faa6bed.chunk.css",
+    "main.js": "/React-Boilerplate-Template/static/js/main.7e10595f.chunk.js",
+    "main.js.map": "/React-Boilerplate-Template/static/js/main.7e10595f.chunk.js.map",
+    "runtime-main.js": "/React-Boilerplate-Template/static/js/runtime-main.06c0291f.js",
+    "runtime-main.js.map": "/React-Boilerplate-Template/static/js/runtime-main.06c0291f.js.map",
+    "static/js/2.1d2247ab.chunk.js": "/React-Boilerplate-Template/static/js/2.1d2247ab.chunk.js",
+    "static/js/2.1d2247ab.chunk.js.map": "/React-Boilerplate-Template/static/js/2.1d2247ab.chunk.js.map",
+    "static/js/3.c6158b98.chunk.js": "/React-Boilerplate-Template/static/js/3.c6158b98.chunk.js",
+    "static/js/3.c6158b98.chunk.js.map": "/React-Boilerplate-Template/static/js/3.c6158b98.chunk.js.map",
+    "index.html": "/React-Boilerplate-Template/index.html",
+    "static/css/main.9faa6bed.chunk.css.map": "/React-Boilerplate-Template/static/css/main.9faa6bed.chunk.css.map",
+    "static/js/2.1d2247ab.chunk.js.LICENSE.txt": "/React-Boilerplate-Template/static/js/2.1d2247ab.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.06c0291f.js",
+    "static/js/2.1d2247ab.chunk.js",
+    "static/css/main.9faa6bed.chunk.css",
+    "static/js/main.7e10595f.chunk.js"
+  ]
+}
