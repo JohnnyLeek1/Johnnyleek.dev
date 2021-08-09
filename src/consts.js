@@ -1,5 +1,6 @@
 // CHANGE THESE TO FIT YOUR PROJECT
-const BASENAME = '/React-Boilerplate-Template';
-const IS_PROJECT_PAGE = true;
+const BASENAME = '/';
+const IS_PROJECT_PAGE = false;
+const TRANSITION_ANIM_DURATION = 1.5;
 
-export { BASENAME, IS_PROJECT_PAGE };
+export { BASENAME, IS_PROJECT_PAGE, TRANSITION_ANIM_DURATION };

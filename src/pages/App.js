@@ -6,6 +6,7 @@ import Hello from '../components/Hello';
 import Page404 from '../components/404';
 import { BASENAME, IS_PROJECT_PAGE } from '../consts';
 import PropTypes from 'prop-types';
+import TransitionScreen from '../components/TransitionScreen';
 
 const Router = ({ children }) => {
   return IS_PROJECT_PAGE ? (
@@ -19,7 +20,9 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/hello" component={Hello} />
+        <Route path="/test-routing">
+          <TransitionScreen toLoad='Test' />
+        </Route>
         <Route path="/" exact component={Hello} />
         <Route path="/" component={Page404} />
       </Switch>
