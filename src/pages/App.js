@@ -1,12 +1,11 @@
 import React from 'react';
-import '../styles/app.scss';
+import PropTypes from 'prop-types';
+
 import { BrowserRouter, HashRouter, Switch, Route } from 'react-router-dom';
 
-import Hello from '../components/Hello';
-import Page404 from '../components/404';
 import { BASENAME, IS_PROJECT_PAGE } from '../consts';
-import PropTypes from 'prop-types';
 import TransitionScreen from '../components/TransitionScreen';
+import '../styles/app.scss';
 
 const Router = ({ children }) => {
   return IS_PROJECT_PAGE ? (
@@ -20,11 +19,15 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/test-routing">
+        <Route path='/test-routing' key='test-route'>
           <TransitionScreen toLoad='Test' />
         </Route>
-        <Route path="/" exact component={Hello} />
-        <Route path="/" component={Page404} />
+        <Route path='/' exact key='home-route'>
+          <TransitionScreen toLoad='Home' />
+        </Route>
+        <Route path='/'>
+          <TransitionScreen toLoad='404' />
+        </Route>
       </Switch>
     </Router>
   );

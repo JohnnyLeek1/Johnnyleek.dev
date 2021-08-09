@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
 import LoadingIcon from './LoadingIcon';
+import HomePage from '../pages/HomePage';
 import TestComponent from './TestComponent';
+import Page404 from './404';
 
 import { generateRandomColor, getForegroundColor } from '../utils';
 import { TRANSITION_ANIM_DURATION } from '../consts';
@@ -19,17 +21,26 @@ export default function TransitionScreen({ toLoad }) {
     const [barColor] = useState(generateRandomColor());
 
     useEffect(() => {
+        console.log('loading screen becoming active');
+        console.log('loading', toLoad);
         // Wait until component is mounted before setting to active (for CSS transition)
         setActive(true);
 
         // Wait until screen is covered before rendering next component
         setTimeout(() => { setStartLoad(true) }, TRANSITION_ANIM_DURATION * 1000);
+
+        return () => console.log('component gone');
     }, []);
 
     const getComponent = () => {
         switch(toLoad) {
+            case 'Home':
+                return <HomePage />
             case 'Test':
                 return <TestComponent shouldWait={true}/>
+            case '404':
+            default:
+                return <Page404/>
         }
     }
 
@@ -48,7 +59,9 @@ export default function TransitionScreen({ toLoad }) {
             <TransitionContext.Provider
                 value={ { onLoad: () => setActive(false) } }
             >
-                {startLoad ? getComponent() : undefined}
+                <div id="page-container">
+                    {startLoad ? getComponent() : undefined}
+                </div>
             </TransitionContext.Provider>
         </>
     );
