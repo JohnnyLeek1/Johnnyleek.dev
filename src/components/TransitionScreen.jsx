@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 
 import LoadingIcon from './LoadingIcon';
 import HomePage from '../pages/HomePage';
+import WorkExperience from '../pages/WorkExperience';
+import ProjectsPage from '../pages/ProjectsPage';
 import TestComponent from './TestComponent';
 import Page404 from './404';
 
@@ -36,6 +38,10 @@ export default function TransitionScreen({ toLoad }) {
         switch(toLoad) {
             case 'Home':
                 return <HomePage />
+            case 'Work Experience':
+                return <WorkExperience />
+            case 'Projects':
+                return <ProjectsPage />
             case 'Test':
                 return <TestComponent shouldWait={true}/>
             case '404':

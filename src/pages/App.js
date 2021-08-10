@@ -22,10 +22,16 @@ function App() {
         <Route path='/test-routing' key='test-route'>
           <TransitionScreen toLoad='Test' />
         </Route>
+        <Route path='/work-experience' key='work-experience-route'>
+          <TransitionScreen toLoad='Work Experience' />
+        </Route>
+        <Route path='/projects' key='projects-route'>
+          <TransitionScreen toLoad='Projects' />
+        </Route>
         <Route path='/' exact key='home-route'>
           <TransitionScreen toLoad='Home' />
         </Route>
-        <Route path='/'>
+        <Route path='/' key='404-route'>
           <TransitionScreen toLoad='404' />
         </Route>
       </Switch>
