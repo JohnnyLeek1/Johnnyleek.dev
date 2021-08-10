@@ -1,0 +1,50 @@
+@import '../variables';
+
+.box-container {
+    min-width: 90px;
+    min-height: 90px;
+  
+    max-width: 90px;
+    max-height: 90px;
+  
+    background-color: $title-secondary;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  
+    margin: auto 1rem;
+
+    transition: all .2s;
+
+    cursor: pointer;
+    label { cursor: pointer; }
+
+    &:hover {
+        background-color: $title-primary;
+        color: #fff;
+    }
+
+    .checkbox {
+        position: absolute;
+        left: -9999vw;
+    }
+
+    .label {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+input[type="checkbox"]:checked.checkbox {
+    &+div {
+        background-color: $title-primary;
+        color: #fff;
+    }
+
+    &+div:hover {
+        background-color: $title-secondary;
+        color: #000;
+    }
+}

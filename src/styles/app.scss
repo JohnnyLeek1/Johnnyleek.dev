@@ -3,6 +3,11 @@
 @import './components/TransitionScreen';
 @import './pages/HomePage';
 @import './pages/WorkExperience';
+@import './pages/ProjectsPage.scss';
+
+.shadow {
+	box-shadow: 0 8px 10px rgba(0,0,0,0.5);
+}
 
 #page-container {
     min-width: 100vw;
