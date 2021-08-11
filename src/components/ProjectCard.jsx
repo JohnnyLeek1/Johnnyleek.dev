@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -29,37 +28,6 @@ const getIcon = language => {
 }
 
 export default function ProjectCard({ title, languages, description, project_link, source_link, img_src }) {
-    /**
-     *             <div className="header">
-                {/* <img src={img_src} alt={title} />}
-                <div className="link-container">
-                    {project_link !== undefined
-                        ? 
-                        <>
-                            <a href={project_link} target="_blank" rel="noopener noreferrer">
-                                Project
-                            </a>
-                            <br />
-                        </>
-                        : undefined
-                    }
-                    <a href={source_link} target="_blank" rel="noopener noreferrer">
-                        Source Code
-                    </a>
-                </div>
-            </div>
-            <div className="body">
-                <div className="content">
-                    <h1>{title}</h1>
-                    <p>
-                        {description}
-                    </p>
-                </div>
-                <div className="footer">
-                    {languages.map(language => <FontAwesomeIcon key={language} icon={getIcon(language)} size={'2x'} />)}
-                </div>
-            </div>
-     */
 
     return (
         <div className="project-card shadow">

@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React, { useContext, useEffect, useState } from 'react';
 import { TransitionContext } from '../components/TransitionScreen';
 import BackButton from '../components/BackButton';
@@ -36,14 +35,6 @@ export default function ProjectsPage() {
     const check = language => setLanguages({ ...languages, [language]: !languages[language]} );
     const isChecked = language => languages[language];
 
-    useEffect(() => {
-        document.querySelectorAll('*').forEach(el => {
-            if (el.offsetWidth > document.documentElement.offsetWidth) {
-                console.log('Found the worst element ever: ', el);
-            }
-        })
-    }, [projects])
-
     // Filter projects to show only projects selected from the checkbox (or all projects if no selection is made)
     const filterProjects = () => {
         if(showAll) return projects;
@@ -76,10 +67,7 @@ export default function ProjectsPage() {
                         project_link={project.project_link}
                         source_link={project.source_link}
                         img_src={`/images/${project.image}`}
-                    />)
-                    // <h1 key={project.name}>poo</h1>)
-                }
-
+                    />)}
             </div>
         </div>
     );
