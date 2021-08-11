@@ -9,8 +9,11 @@
 	box-shadow: 0 8px 10px rgba(0,0,0,0.5);
 }
 
+// * {
+//     outline: solid 1px red;
+// }
+
 #page-container {
-    min-width: 100vw;
     min-height: 100vh;
 	background: linear-gradient(45deg, $background-primary 0%, $title-primary 500%);
 }
@@ -72,7 +75,18 @@ body {
 	height: 100vh;
 	line-height: 1;
 
-	width: 100vw;
+	&::-webkit-scrollbar {
+		width: 0.75rem;
+	}
+
+	&::-webkit-scrollbar-track {
+		background: $title-primary;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: $title-secondary;
+		border-radius: 10px;
+	}
 }
 
 ol,
@@ -115,8 +129,6 @@ h1, h2, h3, h4, h5, h6 {
 #root {
 	height: 100vh;
 	min-height: 100vh;
-	min-width: 100vw;
-	width: 100vw;
 
     background-color: $background-primary;
 }

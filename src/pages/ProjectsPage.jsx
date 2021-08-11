@@ -1,7 +1,9 @@
+/* eslint-disable no-unused-vars */
 import React, { useContext, useEffect, useState } from 'react';
 import { TransitionContext } from '../components/TransitionScreen';
 import BackButton from '../components/BackButton';
 import IconCheckBox from '../components/IconCheckBox';
+import ProjectCard from '../components/ProjectCard';
 import {
     faReact,
     faJsSquare,
@@ -34,6 +36,14 @@ export default function ProjectsPage() {
     const check = language => setLanguages({ ...languages, [language]: !languages[language]} );
     const isChecked = language => languages[language];
 
+    useEffect(() => {
+        document.querySelectorAll('*').forEach(el => {
+            if (el.offsetWidth > document.documentElement.offsetWidth) {
+                console.log('Found the worst element ever: ', el);
+            }
+        })
+    }, [projects])
+
     // Filter projects to show only projects selected from the checkbox (or all projects if no selection is made)
     const filterProjects = () => {
         if(showAll) return projects;
@@ -56,7 +66,21 @@ export default function ProjectsPage() {
                 <IconCheckBox htmlFor="kotlin" icon={faAndroid} label="Kotlin" checkFunc={() => check('kotlin')} checked={() => isChecked('kotlin')} />
             </div>
 
-            {filterProjects().map(project => <h4 key={project.name}>{project.name}</h4>)}
+            <div id="project-cards">
+                {filterProjects().map(project => 
+                    <ProjectCard
+                        key={project.name}
+                        title={project.name}
+                        languages={project.languages}
+                        description={project.description}
+                        project_link={project.project_link}
+                        source_link={project.source_link}
+                        img_src={`/images/${project.image}`}
+                    />)
+                    // <h1 key={project.name}>poo</h1>)
+                }
+
+            </div>
         </div>
     );
 }

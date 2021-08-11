@@ -14,7 +14,7 @@
     justify-content: center;
     flex-direction: column;
   
-    margin: auto 1rem;
+    margin: 1rem;
 
     transition: all .2s;
     border-radius: 10px;
@@ -27,15 +27,15 @@
         color: #fff;
     }
 
-    .checkbox {
-        position: absolute;
-        left: -9999vw;
-    }
-
     .label {
         width: 100%;
         text-align: center;
     }
+}
+
+.checkbox {
+    position: absolute;
+    left: -9999vw;
 }
 
 input[type="checkbox"]:checked.checkbox {

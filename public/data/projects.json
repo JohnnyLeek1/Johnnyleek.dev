@@ -1,7 +1,51 @@
 [{
-    "name": "First project",
-    "languages": ["react", "js", "html", "css"] 
-}, {
-    "name": "Second project",
-    "languages": ["python"]
-}]
+    "name": "Should My State Open?",
+    "languages": ["react", "html", "css", "js", "python"],
+    "description": "This is one of the projects that I'm most proud of. Using a python script, this project gathers and aggregates COVID-19 data, and using that data, determines whether or not any of the 50 states (plus D.C) are able to open. It has ~50 unique vistors a day. Whilst that's not very many, I'm still extremely proud of it. The frontend is written entirely in React, and I set the Python script to automatically upload the newest data via FTP every night. If you're going to check out any of my projects, this would be the one to check out!",
+    "project_link": "https://shouldmystateopen.com",
+    "source_link": "https://gitlab.com/johnnyleek/should-my-state-open",
+    "image": "should-my-state-open.png"
+  }, {
+    "name": "Safejourney",
+    "languages": ["kotlin"],
+    "description": "This app was created as part of the \"Weekend of Innovation\" Hackathon that took place during my internship at Esri. The aim of the app was to help individuals find the safest walking / biking route, especially at night. I had an incredible team helping me on this, and I was in charge of the backend portion of the app: the navigation. Using aggregated data points, we determined an arbitrary \"safety\" rating. These points were weighted based on their rating, and our algorithm would determine a way from your current location to your selected destination by choosing the path with the lowest weight (whilst keeping time traveled to a minimum). We took 3rd place in this hackathon and I was incredibly happy with how it turned out, especially the user friendly UI! This was also my first ever time using Kotlin, so I was really thrown into the deep end; however, I love learning new things and taking on new challenges, so this was very welcome to me.",
+    "source_link": "https://github.com/JohnnyLeek1/safejourney",
+    "image": "safejourney.png"
+  }, {
+    "name": "Banking System",
+    "languages": ["java"],
+    "description": "A full banking system written in Java using JavaFX. This system contains both a frontend GUI and a backend system. Built using the MVC (Model View Controller) architecture, this system is extendable and scalable with ease. It also features password encryption, and data storage! I wrote it for one of my projects in my CPS 240 class (Object Oriented Analysis & Design). It totals ~3,800 lines of code. It's one of my bigger projects, especially where Java is concerned. I encourage you to download it and play around with it, as well as check out the source code behind it!",
+    "source_link": "https://gitlab.com/johnnyleek/banking-system-240",
+    "image": "banking-system.png"
+  }, {
+    "name": "Minecraft Hardcore Plugin",
+    "languages": ["java"],
+    "description": "For our final exam in CPS 240 (Object Oriented Analysis & Design), my friends and I decided to make a Minecraft server plugin that added a lot of annoying features to the game! We added thirst, inventory carry weight, and even manual breathing! We also added lots of different items which you can craft to make these features more manual. Some other features we implemented included increased enemy damage, diseases and medicine, and the inability to break blocks with your fist (you needed to use tools). I also hooked up a simple SQLite database running in the background of the server to store data about the players to ensure that it persisted between player joins. It ended up being really fun, and we learnt a lot about both Object Oriented Design and the Minecraft Spigot API.",
+    "source_link": "https://gitlab.com/johnnyleek/cps-240-final",
+    "image": "hardcore-mod.png"
+  }, {
+    "name": "COVID-19 Twitter Bot",
+    "languages": ["python"],
+    "description": "This is a twitter bot that I created which tracked the spread of COVID-19. The bot is not currently online, but it was mainly a project to test my python skills and play around with the Twitter API, as well as the \"pandas\" module. Throughout the day, my script would download covid-19 data, parse it, and structure tweets based on this data. The reason I stopped running the script was because it became too manual. The python module I was using (Twython) would throw an exception at least once a day (when it was rejected by Twitter for something), and so I had to restart it a lot. I've been meaning to get back to it and add exception handling for that aspect of it, but I have yet to do so.",
+    "project_link": "https://twitter.com/COV19Bot",
+    "source_link": "https://gitlab.com/johnnyleek/covid19bot",
+    "image": "covid-bot.png"
+  }, {
+    "name": "Simple Python Web Scraper",
+    "languages": ["python"],
+    "description": "I now understand the saying \"Programmers are so lazy that they will figure out how to automate something even if it's more work than doing it manually\". I was faced with a big data migration at work, and instead of doing that, I decided to write a python script that sends a request to one of our django servers, and posts data to it. I wrote it in ~45 minutes, so there is still much to be desired in terms of functionality, but hey it is called \"simple\" python web scraper. I also have a version of the bot that downloads data from the website as well, and I have used both at work so far. It was fun to build and I used it to help teach my coworkers about how python requests work.",
+    "source_link": "https://gitlab.com/johnnyleek/simple-python-scraper",
+    "image": "web-scraper.png"
+  }, {
+    "name": "Climate Change App",
+    "languages": ["react", "html", "css", "js"],
+    "description": "Our biology professor allowed us to pick what we wanted to do for our final project, so long as it pertained to something we had learned in the course. I took this opportunity to create a website about climate change! It's a very simple website written in React which connects to an API, pulls climate change data from around the world, and displays it on a map so that you can see the carbon footprint of your country! I wrote this app in a weekend and I think it turned out really nicely! You can view data for your ecological footprint or biocapacity, and also toggle between the data for everyone in the country, or per capita. The colours of the countries change based on the data provided!",
+    "source_link": "https://gitlab.com/johnnyleek/climate-change-app",
+    "image": "climate-change-app.png"
+  }, {
+    "name": "Django and React To-Do List",
+    "languages": ["react", "python", "js"],
+    "description": "I wrote this app during a few hour session with my coworkers in which I taught them the very basics of React, and how to integrate it with Django (all of our projects are Django, but we're just now starting to move our frontends into React). This is a very simple app that serves as a todo list. Users can add and remove items, and these persist between sessions (as the data is saved to the backend). It's a very simple app, but it uses all of the fundamental concepts of both React and Django. In React we use things like functional components, CSS modules, state, and props. On the Django side we use views, models, and the admin site. Overall it's a very simple app, but a great foundation for React. I'm very glad I did this project, as even though I was the teacher, I still learnt quite a bit!",
+    "source_link": "https://gitlab.com/johnnyleek/django-react-todo",
+    "image": "todo-list.png"
+  }]
