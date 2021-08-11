@@ -85,7 +85,7 @@ export default function HomePage() {
                     <NavLink to='/work-experience'>Work Experience</NavLink>
                     <NavLink to='/resume'>Resume</NavLink>
                     <NavLink to='/about'>About Me</NavLink>
-                    <NavLink to='/contact'>Context</NavLink>
+                    <NavLink to='/contact'>Contact</NavLink>
                 </div>
             </div>
         </div>

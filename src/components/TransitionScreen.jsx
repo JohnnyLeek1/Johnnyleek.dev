@@ -5,12 +5,12 @@ import LoadingIcon from './LoadingIcon';
 import HomePage from '../pages/HomePage';
 import WorkExperience from '../pages/WorkExperience';
 import ProjectsPage from '../pages/ProjectsPage';
+import ResumePage from '../pages/ResumePage';
 import TestComponent from './TestComponent';
 import Page404 from './404';
 
 import { generateRandomColor, getForegroundColor } from '../utils';
 import { TRANSITION_ANIM_DURATION } from '../consts';
-
 
 const TransitionContext = React.createContext({
     onLoad: () => { throw new Error("Cannot load a component without a TransitionScreen Parent."); }
@@ -42,6 +42,8 @@ export default function TransitionScreen({ toLoad }) {
                 return <WorkExperience />
             case 'Projects':
                 return <ProjectsPage />
+            case 'Resume':
+                return <ResumePage />
             case 'Test':
                 return <TestComponent shouldWait={true}/>
             case '404':

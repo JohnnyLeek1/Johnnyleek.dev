@@ -28,6 +28,9 @@ function App() {
         <Route path='/projects' key='projects-route'>
           <TransitionScreen toLoad='Projects' />
         </Route>
+        <Route path='/resume' key='resume-route'>
+          <TransitionScreen toLoad='Resume' />
+        </Route>
         <Route path='/' exact key='home-route'>
           <TransitionScreen toLoad='Home' />
         </Route>
