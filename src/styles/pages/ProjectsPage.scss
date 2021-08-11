@@ -2,10 +2,11 @@
     width: 100vw;
     min-height: 100vh;
 
-    .title {
-        padding-top: 1rem;
-
-        text-align: center;
-        color: #fff;
+    #language-checkboxes {
+        display: flex;
+        width: 80vw;
+        justify-content: space-between;
+        margin: auto;
+        padding: 1rem 0;
     }
 }

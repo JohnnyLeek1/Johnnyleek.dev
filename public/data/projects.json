@@ -1,0 +1,7 @@
+[{
+    "name": "First project",
+    "languages": ["react", "js", "html", "css"] 
+}, {
+    "name": "Second project",
+    "languages": ["python"]
+}]

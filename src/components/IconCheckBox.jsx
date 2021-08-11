@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 export default function IconCheckBox({ htmlFor, icon, label, checkFunc, checked }) {
     return (
         <>
-        <input type="checkbox" name={htmlFor} id={htmlFor} className="checkbox" onChange={() => checkFunc(htmlFor)} checked={checked(htmlFor)}/>
+        <input type="checkbox" name={htmlFor} id={htmlFor} className="checkbox" onChange={() => checkFunc(htmlFor)} checked={checked()}/>
         <div className={`box-container shadow`}>
             <label htmlFor={htmlFor} className="label"><FontAwesomeIcon icon={icon} size={'3x'}/></label>
             <label htmlFor={htmlFor} className="label">{label}</label>
@@ -20,5 +20,5 @@ IconCheckBox.propTypes = {
     icon: PropTypes.any,
     label: PropTypes.string,
     checkFunc: PropTypes.func,
-    checked: PropTypes.bool
+    checked: PropTypes.func
 }
