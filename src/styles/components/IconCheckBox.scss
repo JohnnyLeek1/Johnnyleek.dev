@@ -42,9 +42,4 @@ input[type="checkbox"]:checked.checkbox {
         background-color: $title-primary;
         color: #fff;
     }
-
-    &+div:hover {
-        background-color: $title-secondary;
-        color: #000;
-    }
 }
