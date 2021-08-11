@@ -12,6 +12,7 @@
 #page-container {
     min-width: 100vw;
     min-height: 100vh;
+	background: linear-gradient(45deg, $background-primary 0%, $title-primary 500%);
 }
 
 .flex-center {
