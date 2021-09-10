@@ -22,6 +22,9 @@ function App() {
         <Route path='/test-routing' key='test-route'>
           <TransitionScreen toLoad='Test' />
         </Route>
+        <Route path='/about' key='about-route'>
+          <TransitionScreen toLoad='About' />
+        </Route>
         <Route path='/work-experience' key='work-experience-route'>
           <TransitionScreen toLoad='Work Experience' />
         </Route>

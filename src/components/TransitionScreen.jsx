@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 import LoadingIcon from './LoadingIcon';
 import HomePage from '../pages/HomePage';
+import AboutPage from '../pages/AboutPage';
 import WorkExperience from '../pages/WorkExperience';
 import ProjectsPage from '../pages/ProjectsPage';
 import ResumePage from '../pages/ResumePage';
@@ -38,6 +39,8 @@ export default function TransitionScreen({ toLoad }) {
         switch(toLoad) {
             case 'Home':
                 return <HomePage />
+            case 'About':
+                return <AboutPage />
             case 'Work Experience':
                 return <WorkExperience />
             case 'Projects':
